@@ -12,6 +12,7 @@ geom_hurricane(
   show.legend = NA,
   inherit.aes = TRUE,
   scale_radii = 1,
+  alpha = 0.7,
   ...
 )
 }
@@ -29,6 +30,8 @@ geom_hurricane(
 \item{inherit.aes}{default}
 
 \item{scale_radii}{allows the user to plot wind radii charts with the radii scaled back to a certain percent of the maximum radii}
+
+\item{alpha}{0.5 transparency}
 
 \item{...}{default}
 }

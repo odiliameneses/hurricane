@@ -41,6 +41,7 @@ StatHurricane <- ggplot2::ggproto("StatHurricane", ggplot2::Stat,
 #' @param position default
 #' @param show.legend default
 #' @param inherit.aes default
+#' @param alpha 0.5 transparency
 #' @param scale_radii allows the user to plot wind radii charts with the radii scaled back to a certain percent of the maximum radii
 #' @param ... default
 #'
@@ -66,6 +67,7 @@ geom_hurricane <- function(mapping = NULL,
                            show.legend = NA,
                            inherit.aes = TRUE,
                            scale_radii = 1,
+                           alpha = 0.7,
                            ...)
 {
 
@@ -77,6 +79,6 @@ geom_hurricane <- function(mapping = NULL,
     position = position,
     show.legend = show.legend,
     inherit.aes = inherit.aes,
-    params = list(scale_radii = scale_radii, ...)
+    params = list(alpha=alpha,scale_radii = scale_radii, ...)
   )
 }

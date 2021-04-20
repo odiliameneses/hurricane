@@ -1,0 +1,18 @@
+Package: hurricane
+Type: Package
+Title: Hurricane Wind Radii 
+Version: 0.1.0
+Author: Odilia Meneses
+Maintainer: Odilia Meneses <odiliameneses@gmail.com>
+Description: This package is my answer to the assignment "Build a new geom" (Building Data Visualization - Johns Hopkins Uni + Coursera). It mainly consists of 2 functions: 1 to transform the raw data and 1 where a new geom is created.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr,
+    ggplot2,
+    geosphere,
+    dplyr
